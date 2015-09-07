@@ -10,6 +10,8 @@ int main()
     int computer;
 
     char c = 'y';
+
+    srand(time(NULL));
     while (c != 'n') {
         computer = b_rand();
         printf("앞면 또는 뒷면(1 또는 0): ");
@@ -33,7 +35,5 @@ int main()
 
 int b_rand()
 {
-    srand(time(NULL));
-
     return rand() % 2;
 }
