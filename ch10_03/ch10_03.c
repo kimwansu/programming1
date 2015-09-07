@@ -20,13 +20,11 @@ int main()
 int array_equal(int a[], int b[], int size)
 {
     int i;
-    int result = 1;
-
+    
     for (i = 0; i < size; i++) {
         if (a[i] != b[i]) {
-            result = 0;
-            break;
+            return 0
         }
     }
-    return result;
+    return 1;
 }
